@@ -1,0 +1,11 @@
+DataSift Embedded - C Componant
+
+This is a really simple C program that will be invoked by a PHP script via exec to turn 
+on and off a series of FPGA controlled LEDs.
+
+In a world where I could write decent code maybe the PHP side of things would be completely 
+removed and everything would be written in C.
+
+Who knows.
+
+Gareth / @NetworkString
