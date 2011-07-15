@@ -51,8 +51,6 @@ int main(int argc, char* argv[])
                 }
         }
 
-        //bbLog("Starting a new event...");
-
         if(debug == 1)
 		printf("Starting an LED hunt....%i\n",score);
 
