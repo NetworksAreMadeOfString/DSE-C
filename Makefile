@@ -14,4 +14,7 @@
 # Makefile 'o simpleness
 
 all:
-	gcc -mcpu=arm9 -Wall dse.c sbus.c -o dse -ldl -pthread
+	g++ -mcpu=arm9 dse.c sbus.c -o dse -lcurl
+
+verbose:
+	g++ -mcpu=arm9 -Wall dse.c sbus.c -o dse -ldl -pthread -lcurl
