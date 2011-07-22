@@ -393,9 +393,127 @@ void ProcessScore(int Score)
 		printf("Received a score of %i\n",Score);
 
 	sbuslock();
-	if(Score > 50)
+	//Lazy
+	if(Score < 10)
 	{
-		setdiopin(25,1);
+		setdiopin(lvl2,0);
+                setdiopin(lvl3,0);
+                setdiopin(lvl4,0);
+                setdiopin(lvl5,0);
+                setdiopin(lvl6,0);
+                setdiopin(lvl7,0);
+                setdiopin(lvl8,0);
+                setdiopin(lvl9,0);
+                setdiopin(lvl10,0);
+	}
+	else if(Score >= 10 && Score < 20)
+	{
+		setdiopin(lvl2,1);
+		setdiopin(lvl3,0);
+		setdiopin(lvl4,0);
+		setdiopin(lvl5,0);
+		setdiopin(lvl6,0);
+		setdiopin(lvl7,0);
+		setdiopin(lvl8,0);
+		setdiopin(lvl9,0);
+		setdiopin(lvl10,0);
+		
+	}
+	else if(Score >= 20 && Score < 30)
+	{
+		setdiopin(lvl2,1);
+                setdiopin(lvl3,1);
+                setdiopin(lvl4,0);
+                setdiopin(lvl5,0);
+                setdiopin(lvl6,0);
+                setdiopin(lvl7,0);
+                setdiopin(lvl8,0);
+                setdiopin(lvl9,0);
+                setdiopin(lvl10,0);
+	}
+	else if(Score >= 30 && Score < 40)
+        {
+                setdiopin(lvl2,1);
+                setdiopin(lvl3,1);
+                setdiopin(lvl4,1);
+                setdiopin(lvl5,0);
+                setdiopin(lvl6,0);
+                setdiopin(lvl7,0);
+                setdiopin(lvl8,0);
+                setdiopin(lvl9,0);
+                setdiopin(lvl10,0);
+        }
+	else if(Score >= 40 && Score < 50)
+        {
+                setdiopin(lvl2,1);
+                setdiopin(lvl3,1);
+                setdiopin(lvl4,1);
+                setdiopin(lvl5,1);
+                setdiopin(lvl6,0);
+                setdiopin(lvl7,0);
+                setdiopin(lvl8,0);
+                setdiopin(lvl9,0);
+                setdiopin(lvl10,0);
+        }
+	else if(Score >= 50 && Score < 60)
+        {
+                setdiopin(lvl2,1);
+                setdiopin(lvl3,1);
+                setdiopin(lvl4,1);
+                setdiopin(lvl5,1);
+                setdiopin(lvl6,1);
+                setdiopin(lvl7,0);
+                setdiopin(lvl8,0);
+                setdiopin(lvl9,0);
+                setdiopin(lvl10,0);
+        }
+	else if(Score >= 60 && Score < 70)
+        {
+                setdiopin(lvl2,1);
+                setdiopin(lvl3,1);
+                setdiopin(lvl4,1);
+                setdiopin(lvl5,1);
+                setdiopin(lvl6,1);
+                setdiopin(lvl7,1);
+                setdiopin(lvl8,0);
+                setdiopin(lvl9,0);
+                setdiopin(lvl10,0);
+        }
+	else if(Score >= 70 && Score < 80)
+        {
+                setdiopin(lvl2,1);
+                setdiopin(lvl3,1);
+                setdiopin(lvl4,1);
+                setdiopin(lvl5,1);
+                setdiopin(lvl6,1);
+                setdiopin(lvl7,1);
+                setdiopin(lvl8,1);
+                setdiopin(lvl9,0);
+                setdiopin(lvl10,0);
+        }
+	else if(Score >= 80 && Score < 90)
+        {
+                setdiopin(lvl2,1);
+                setdiopin(lvl3,1);
+                setdiopin(lvl4,1);
+                setdiopin(lvl5,1);
+                setdiopin(lvl6,1);
+                setdiopin(lvl7,1);
+                setdiopin(lvl8,1);
+                setdiopin(lvl9,1);
+                setdiopin(lvl10,0);
+        }
+	else if(Score >= 90)
+	{
+		setdiopin(lvl2,1);
+		setdiopin(lvl3,1);
+		setdiopin(lvl4,1);
+		setdiopin(lvl5,1);
+		setdiopin(lvl6,1);
+		setdiopin(lvl7,1);
+		setdiopin(lvl8,1);
+		setdiopin(lvl9,1);
+		setdiopin(lvl10,1);
 	}
 	else
 	{
