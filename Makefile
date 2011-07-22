@@ -13,6 +13,9 @@
 #
 # Makefile 'o simpleness
 
+withgit:
+	git commit -a -m "pre-compile commit(`date`)"; g++ -mcpu=arm9 dse.c sbus.c -o dse -lcurl
+
 all:
 	g++ -mcpu=arm9 dse.c sbus.c -o dse -lcurl
 
